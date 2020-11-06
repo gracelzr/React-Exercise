@@ -8,16 +8,16 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-  // </React.StrictMode>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
 const element = React.createElement(
 	'h1',
-	{className:'greeting'},
-	'Hello, world!'
+	{className:'img'},
+	'Image Classification with ML5.js'
 );
-ReactDOM.render(element, document.getElementById('text'));
+ReactDOM.render(element, document.getElementById('title'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
