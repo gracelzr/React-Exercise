@@ -2,8 +2,10 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import './App.css';
-import dog from "./eagle.jpg";
+import './components/yolo.js'
+import dog from "./dog.jpg";
 import * as ml5 from "ml5";
+
 
 /*function App() {*/
 class App extends Component {
@@ -54,9 +56,10 @@ class App extends Component {
                     <NavbarBrand href="https://ml5js.org/"> ML5.js Home </NavbarBrand>
                 </div>
             </Navbar>
-            <img src={dog} id="dog-img" width="500" alt="" />
+            <img src={dog} id="dog-img" width="400" alt="" />
             <div> Prediction Results: </div>
-            { predictions }
+                <p> {predictions} </p>
+                
         </div>
         );
     }
