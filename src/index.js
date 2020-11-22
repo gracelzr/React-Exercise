@@ -16,7 +16,7 @@ ReactDOM.render(
 const element = React.createElement(
 	'h1',
 	{className:'img'},
-	'Image Classification with ML5.js'
+	'Object Recognition'
 );
 ReactDOM.render(element, document.getElementById('title'));
 

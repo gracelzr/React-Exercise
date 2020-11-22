@@ -3,9 +3,15 @@ import {
     Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle
 } from 'reactstrap';
 import * as ml5 from "ml5";
+import './ImgClassification.css';
 
 /* This program displays multiple images and their prediction results
  * Media is a container that can hold images and text */
+
+/* Lifecycle methods:
+    constructor -> render -> componentDidMount
+
+*/
 
 class ImageClassification extends Component {
     constructor(props) {
@@ -13,12 +19,21 @@ class ImageClassification extends Component {
         this.state = {
             predictions: [],
             selectedImg: null
-        }
+        };
+        this.scroll = this.scroll.bind(this);
     }
 
-    setPred = (pred) => {
+    scroll(direction) {
+        const imgCon = document.getElementsByClassName('image-container')[0];
+        let far = imgCon.width() / 2 * direction;
+        let pos = imgCon.scrollLeft() + far;
+        imgCon.animate({ scrollLeft: pos }, 1000)
+    }
+
+    setPred = (pred, pic) => {
         this.setState({
-            predictions: pred
+            predictions: pred,
+            selectedImg: pic
         });
     }
 
@@ -33,11 +48,17 @@ class ImageClassification extends Component {
         classifier.predict(image, 5, function (err, results) {
             return results;
         }).then((results) => {
-            this.setPred(results)
+            this.setPred(results, pic)
             console.log(results);
         })
+    }
 
-        if (pic != null) {
+    componentDidMount() {
+        console.log("ImgClassification component componentDidMount is invoked");
+    }
+
+    renderPic(pic) {
+        if (pic != null)
             return (
                 <Card>
                     <CardImg top src={pic.image} alt={pic.name} />
@@ -47,25 +68,18 @@ class ImageClassification extends Component {
                     </CardBody>
                 </Card>
             );
-        } else {
+        else
             return (
                 <div></div>
             );
-        }
-
     }
-
-/*    componentDidMount(pic) {
-        this.classifyImg(pic);
-    }
-*/
 
     render() {
         const pictures = this.props.pics.map((pic) => {
             return (
-                <div className="col-12 col-md-5 m-1">
+                <div className="image">    
                     <Card key={pic.id} onClick={() => this.classifyImg(pic)}>
-                        <CardImg width="50%" src={pic.image} alt={pic.name} id={ pic.id } />
+                        <CardImg width="80%" height="160px" src={pic.image} alt={pic.name} id={ pic.id } />
                         <CardTitle tag="h5" >{pic.name}</CardTitle>
                     </Card>
                 </div>
@@ -79,7 +93,7 @@ class ImageClassification extends Component {
                 probability = Math.floor(probability * 10000) / 100 + "%";
                 return (
                     <div>
-                        <div key={i + ""}> { i+1 }. Prediction: {className} at {probability}</div>
+                        <div key={i + ""}> { i+1 }. {className} at {probability}</div>
                     </div>
                 );
 
@@ -87,14 +101,27 @@ class ImageClassification extends Component {
         }
 
         return (
-            <div className="row">
-                {pictures}
-
-                <div> Prediction Results of Selected Image: </div>
-                <p>
-                    <br/>
-                    {predictions}
-                </p>
+            <div className="container">
+                For more information about ML5.js, click ML5.js Home and learn more!
+                <div className="main">
+                    <h5> Pick an image from the follwing gallery and check result for your selection. </h5>
+                    <div className="wrapper">
+                        <div className="image-container">
+                            {pictures}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div className="col-12 col-md-5 m-1">
+                        {this.renderPic(this.state.selectedImg)}
+                    </div>
+                    <div className="col-12 col-md-5 m-1">
+                        Prediction Results of Selected Image: 
+                        <p>
+                            {predictions}
+                        </p>
+                    </div>
+                </div>
             </div>
 
             

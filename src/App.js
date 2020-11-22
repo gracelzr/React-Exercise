@@ -23,8 +23,8 @@ class App extends Component {
                 <div className="container">
                     <NavbarBrand href="https://ml5js.org/"> ML5.js Home </NavbarBrand>
                 </div>
-                </Navbar>
-                <ImageClassification pics={this.state.pics} />
+            </Navbar>
+            <ImageClassification pics={this.state.pics} />
         </div>
         );
     }
