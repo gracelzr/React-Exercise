@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/React-Exercise/static/css/main.8846b29a.chunk.css",
-    "main.js": "/React-Exercise/static/js/main.b40c314f.chunk.js",
-    "main.js.map": "/React-Exercise/static/js/main.b40c314f.chunk.js.map",
-    "runtime-main.js": "/React-Exercise/static/js/runtime-main.e6c6761a.js",
-    "runtime-main.js.map": "/React-Exercise/static/js/runtime-main.e6c6761a.js.map",
-    "static/css/2.20aa2d7b.chunk.css": "/React-Exercise/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.f34d5d02.chunk.js": "/React-Exercise/static/js/2.f34d5d02.chunk.js",
-    "static/js/2.f34d5d02.chunk.js.map": "/React-Exercise/static/js/2.f34d5d02.chunk.js.map",
-    "static/js/3.52a55000.chunk.js": "/React-Exercise/static/js/3.52a55000.chunk.js",
-    "static/js/3.52a55000.chunk.js.map": "/React-Exercise/static/js/3.52a55000.chunk.js.map",
+    "main.css": "/React-Exercise/static/css/main.13f08ff5.chunk.css",
+    "main.js": "/React-Exercise/static/js/main.72c69fed.chunk.js",
+    "main.js.map": "/React-Exercise/static/js/main.72c69fed.chunk.js.map",
+    "runtime-main.js": "/React-Exercise/static/js/runtime-main.bd0ecfc0.js",
+    "runtime-main.js.map": "/React-Exercise/static/js/runtime-main.bd0ecfc0.js.map",
+    "static/css/2.ae4368e7.chunk.css": "/React-Exercise/static/css/2.ae4368e7.chunk.css",
+    "static/js/2.3716f5b0.chunk.js": "/React-Exercise/static/js/2.3716f5b0.chunk.js",
+    "static/js/2.3716f5b0.chunk.js.map": "/React-Exercise/static/js/2.3716f5b0.chunk.js.map",
+    "static/js/3.23a88c67.chunk.js": "/React-Exercise/static/js/3.23a88c67.chunk.js",
+    "static/js/3.23a88c67.chunk.js.map": "/React-Exercise/static/js/3.23a88c67.chunk.js.map",
     "index.html": "/React-Exercise/index.html",
-    "static/css/2.20aa2d7b.chunk.css.map": "/React-Exercise/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.8846b29a.chunk.css.map": "/React-Exercise/static/css/main.8846b29a.chunk.css.map",
-    "static/js/2.f34d5d02.chunk.js.LICENSE.txt": "/React-Exercise/static/js/2.f34d5d02.chunk.js.LICENSE.txt",
+    "static/css/2.ae4368e7.chunk.css.map": "/React-Exercise/static/css/2.ae4368e7.chunk.css.map",
+    "static/css/main.13f08ff5.chunk.css.map": "/React-Exercise/static/css/main.13f08ff5.chunk.css.map",
+    "static/js/2.3716f5b0.chunk.js.LICENSE.txt": "/React-Exercise/static/js/2.3716f5b0.chunk.js.LICENSE.txt",
     "static/media/dog.8ff4b2e4.jpg": "/React-Exercise/static/media/dog.8ff4b2e4.jpg",
     "static/media/eagle.2dc255d7.jpg": "/React-Exercise/static/media/eagle.2dc255d7.jpg",
+    "static/media/font-awesome.css": "/React-Exercise/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/giraffe.671bebd0.jpg": "/React-Exercise/static/media/giraffe.671bebd0.jpg",
     "static/media/horses.c5078be7.jpg": "/React-Exercise/static/media/horses.c5078be7.jpg",
     "static/media/kite.597f89bf.jpg": "/React-Exercise/static/media/kite.597f89bf.jpg",
@@ -24,10 +25,10 @@
     "static/media/scream.266fa10e.jpg": "/React-Exercise/static/media/scream.266fa10e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e6c6761a.js",
-    "static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.f34d5d02.chunk.js",
-    "static/css/main.8846b29a.chunk.css",
-    "static/js/main.b40c314f.chunk.js"
+    "static/js/runtime-main.bd0ecfc0.js",
+    "static/css/2.ae4368e7.chunk.css",
+    "static/js/2.3716f5b0.chunk.js",
+    "static/css/main.13f08ff5.chunk.css",
+    "static/js/main.72c69fed.chunk.js"
   ]
 }
