@@ -4,7 +4,8 @@
     "\\public",
     "\\src",
     "\\src\\assets",
-    "\\src\\components"
+    "\\src\\components",
+    "\\src\\shared"
   ],
   "SelectedNode": "\\src\\components\\yolo.js",
   "PreviewInSolutionExplorer": false

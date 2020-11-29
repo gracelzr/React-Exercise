@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import 'font-awesome/css/font-awesome.css';
+import 'bootstrap-social/bootstrap-social.css';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,12 +14,12 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-const element = React.createElement(
+/*const element = React.createElement(
 	'h1',
 	{className:'img'},
 	'Object Recognition'
 );
-ReactDOM.render(element, document.getElementById('title'));
+ReactDOM.render(element, document.getElementById('title'));*/
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

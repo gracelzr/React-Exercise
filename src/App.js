@@ -5,7 +5,8 @@ import './App.css';
 import './components/yolo.js';
 import { IMAGES } from './shared/imgInfo';
 import ImageClassification from './components/ImgClassification';
-
+import Header from './components/HeaderComponent';
+import Footer from './components/FooterComponent';
 
 /*function App() {*/
 class App extends Component {
@@ -19,12 +20,9 @@ class App extends Component {
     render() {
         return(
         <div className="App">
-            <Navbar dark color="primary">
-                <div className="container">
-                    <NavbarBrand href="https://ml5js.org/"> ML5.js Home </NavbarBrand>
-                </div>
-            </Navbar>
-            <ImageClassification pics={this.state.pics} />
+            <Header />
+                <ImageClassification pics={this.state.pics} />
+            <Footer />
         </div>
         );
     }

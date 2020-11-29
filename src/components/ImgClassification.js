@@ -60,13 +60,11 @@ class ImageClassification extends Component {
     renderPic(pic) {
         if (pic != null)
             return (
-                <Card>
-                    <CardImg top src={pic.image} alt={pic.name} />
-                    <CardBody>
-                        <CardTitle>{pic.name}</CardTitle>
-                        <CardText>{pic.description}</CardText>
-                    </CardBody>
-                </Card>
+                <div>
+                    <img top src={pic.image} alt={pic.name} height="auto" width="100%" />
+                    <p>{pic.name}</p>
+                    <p>{pic.description}</p>
+                </div>
             );
         else
             return (
@@ -92,7 +90,7 @@ class ImageClassification extends Component {
                 let { className, probability } = pred;
                 probability = Math.floor(probability * 10000) / 100 + "%";
                 return (
-                    <div>
+                    <div>                       
                         <div key={i + ""}> { i+1 }. {className} at {probability}</div>
                     </div>
                 );
@@ -116,10 +114,7 @@ class ImageClassification extends Component {
                         {this.renderPic(this.state.selectedImg)}
                     </div>
                     <div className="col-12 col-md-5 m-1">
-                        Prediction Results of Selected Image: 
-                        <p>
-                            {predictions}
-                        </p>
+                        {predictions}
                     </div>
                 </div>
             </div>
